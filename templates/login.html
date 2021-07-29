@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+    <form action="/signin/" method="post">
+        {% csrf_token %}
+        <input type="text" placeholder="Kullanıcı adı" name="uname">
+        <input type="password" placeholder="Parola" name="passwd">
+        <input type="checkbox" placeholder="remember me" name="remember">
+        <input type="submit" value="Giriş">
+    </form>
+    <a href="/signup/">Kayıt OL</a>
+</body>
+</html>
